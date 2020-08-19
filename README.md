@@ -3,7 +3,7 @@ Toyosi Bamidele's Data Science Portfolio
 
 Data Visulization and Simple logisitic regression
 
-#[Project 1 Titanic Survival](https://github.com/toyosibamidele/Data-Science-Portfolio)
+##[Project 1 Titanic Survival](https://github.com/toyosibamidele/Data-Science-Portfolio)
 
 #The sinking of the RMS Titanic is one of the most infamous shipwrecks in history. 
 #On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg,killing 1,502 out of 2,224 passengers and crew.
@@ -15,7 +15,7 @@ Data Visulization and Simple logisitic regression
 
 #Using Titanic data, “Titanic.csv" describing the relevant information about the passengers, an analysis to learn the composition of the Titanic passengers and get a sense of what sorts of people were likely to survive is shown below
 
-#[Project 2 Challenger Space Shuttle Oring - Failure Prediction](https://github.com/toyosibamidele/Data-Science-Portfolio)
+##[Project 2 Challenger Space Shuttle Oring - Failure Prediction](https://github.com/toyosibamidele/Data-Science-Portfolio)
 
 #The Challenger's service to America's space program ended in tragedy on Jan. 28, 1986. Just 73 seconds into mission STS 51-L, a booster failure caused an explosion that resulted in the loss of seven astronauts, as well as the vehicle.The cause of the disaster was traced to an O-ring, a circular gasket that sealed the right rocket booster. 
 
