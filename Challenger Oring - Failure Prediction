@@ -1,0 +1,56 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import statsmodels.api as sm 
+import seaborn as sns
+sns.set()
+
+
+#Challenger oring data 
+raw_data = pd.read_csv('Challenger shuttle oring .csv')
+raw_data
+raw_data.describe()
+
+data = raw_data.copy()
+raw_data.copy()
+
+y  = data['oring_damage']
+x1 = data['Temperature']
+
+x=sm.add_constant(x1)
+reg_log=sm.Logit(y,x)
+results_log = reg_log.fit() #logistic regression 
+results_log.summary()#logistic regression results
+
+
+ypred =results_log.predict(x)
+print(ypred)
+
+pred_sorted =np.sort(ypred, axis=0)
+
+for num in pred_sorted:
+    print(num)
+     
+x2 =np.sort(x1)[::-1]
+for num in x2:
+    print(num)   
+    
+    
+mylist = zip(x2,pred_sorted) 
+headers=['Temperature','Probability ']
+print (tabulate(mylist, headers))  
+
+plt.scatter(x1,y,color='C0')
+plt.xlabel('Temperature',fontsize=20)
+plt.ylabel('oring damage index',fontsize=20)
+
+plt.show()
+
+sns.regplot(x = "Temperature", y = "oring_damage", 
+            y_jitter = 0,
+            data =  raw_data.copy(), 
+            logistic = True,
+            ci = None)
+
+# Display the plot
+plt.show()
