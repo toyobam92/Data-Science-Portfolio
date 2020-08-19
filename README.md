@@ -15,7 +15,7 @@ Data Visulization and Simple logisitic regression
 
 #Using Titanic data, “Titanic.csv" describing the relevant information about the passengers, an analysis to learn the composition of the Titanic passengers and get a sense of what sorts of people were likely to survive is shown below
 
-![](https://github.com/toyosibamidele/Data-Science-Portfolio/blob/master/Images/Titanic%20Survival%20Data%20Visualization.png)
+![](Images/Titanic%20Survival%20Data%20Visualization.png)
 
 ##[Project 2 Challenger Space Shuttle Oring - Failure Prediction](https://github.com/toyosibamidele/Data-Science-Portfolio)
 
@@ -26,7 +26,7 @@ Data Visulization and Simple logisitic regression
 #A simple logistic regression model utilizing python, for binary classification data (no damage vs damaged orings )is used to determine the probability of O-ring #erosion given the temperature over time data from launches prior to challenger from 53-degree F to 81 degrees F.
 #Given the available data, it can be inferred that lower temperatures at launch show some evidence of erosion damage
 
-![](https://github.com/toyosibamidele/Data-Science-Portfolio/blob/master/Images/challenger%20space%20shuttle%20oring%20damage.png)
+![](Images/challenger%20space%20shuttle%20oring%20damage.png)
 
 
 
