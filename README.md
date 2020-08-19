@@ -1,7 +1,7 @@
 # Data-Science-Portfolio
 Toyosi Bamidele's Data Science Portfolio
 
-#Titanic Survival -Data Visualization and Simple logistic regression
+#[Titanic Survival -Data Visualization and Simple logistic regression](https://github.com/toyosibamidele/Data-Science-Portfolio)
 
 #The sinking of the RMS Titanic is one of the most infamous shipwrecks in history. 
 #On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg,killing 1,502 out of 2,224 passengers and crew.
