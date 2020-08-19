@@ -23,3 +23,5 @@ Data Visulization and Simple logisitic regression
 
 #A simple logistic regression model utilizing python, for binary classification data (no damage vs damaged orings )is used to determine the probability of O-ring #erosion given the temperature over time data from launches prior to challenger from 53-degree F to 81 degrees F.
 #Given the available data, it can be inferred that lower temperatures at launch show some evidence of erosion damage
+
+[]https://github.com/toyosibamidele/Data-Science-Portfolio/commit/382d4d90281143110c9f18e3fbb2cd68478aa618?short_path=9babac0#diff-9babac0d1c665fd21db4e109a619ae3a
