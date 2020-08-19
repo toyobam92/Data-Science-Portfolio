@@ -15,7 +15,7 @@ Data Visulization and Simple logisitic regression
 
 #Using Titanic data, “Titanic.csv" describing the relevant information about the passengers, an analysis to learn the composition of the Titanic passengers and get a sense of what sorts of people were likely to survive is shown below
 
-![](https://github.com/toyosibamidele/Data-Science-Portfolio/blob/master/Images/Screen%20Shot%202020-08-19%20at%202.18.58%20PM.png)
+![](https://github.com/toyosibamidele/Data-Science-Portfolio/blob/master/Images/Titanic%20Survival%20Data%20Visualization.png)
 
 ##[Project 2 Challenger Space Shuttle Oring - Failure Prediction](https://github.com/toyosibamidele/Data-Science-Portfolio)
 
