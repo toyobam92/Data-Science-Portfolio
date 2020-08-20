@@ -1,7 +1,7 @@
 # Data-Science-Portfolio
 Toyosi Bamidele's Data Science Portfolio
 
-Data Visulization and Simple logisitic regression
+Data Visualization and Simple logisitic regression
 
 ##[Project 1 Titanic Survival](https://github.com/toyosibamidele/Data-Science-Portfolio)
 
