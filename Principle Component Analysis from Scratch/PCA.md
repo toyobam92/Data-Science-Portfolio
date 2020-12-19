@@ -1,4 +1,4 @@
-The one-stop PCA center:
+[The one-stop PCA center:
 
 What are Eigenfaces and how does it relates to dimnsionality reduction?
     Eigenfaces represents the set of eigenvectors of the covariance matrix of facial images, the essence of this approach is to capture the direction with the most variance and transform the original face images while preserving the most information.
@@ -18,4 +18,4 @@ For the purpose of this project, the demo data set consists of 5 classes of 10 i
     f. Choose the most significant eigenfaces capture 95%(or any choice) to produce transformed data
     g. Calculate the weights: each normalized training images multiplies each eigenface
     h. Vectorize and normalize the test images and calculate the weights
-    i. Define the distance within the face space between the training images and test images for a simple classification by using Euclidian distance
+    i. Define the distance within the face space between the training images and test images for a simple classification by using Euclidian distance]
