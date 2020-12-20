@@ -3,7 +3,7 @@ Toyosi Bamidele's Data Science Portfolio
 
 [SQL Project](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/SQL%20Project)
 
-Created an Entity relationship model and dimensional relationship model to populate data in a database
+Created an Entity relationship model and dimensional relationship model to populate census data in a database
 
 ![](Images/FCP3_Dimensional.png)
 
