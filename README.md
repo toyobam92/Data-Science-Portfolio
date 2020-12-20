@@ -1,7 +1,13 @@
 # Data-Science-Portfolio
 Toyosi Bamidele's Data Science Portfolio
 
-Business Intelligence
+[SQL Project](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/SQL%20Project)
+
+Created an Entity relationship model and dimensional relationship model to populate data in a database
+
+![](Images/FCP3_Dimensional.png)
+
+Business Intelligence Project
 
 [Key Considerations for Market Trends - COVID 19 as a case study](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/Market%20Trend%20Analysis)
 
