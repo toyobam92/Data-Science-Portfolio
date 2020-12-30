@@ -1,3 +1,4 @@
+theme: jekyll-theme-minimal
 # Data-Science-Portfolio
 Toyosi Bamidele's Data Science Portfolio
 
