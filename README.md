@@ -13,6 +13,9 @@ Business Intelligence Project
 
 <div class='tableauPlaceholder' id='viz1608418011266' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MarketTrendsduringaPandemic&#47;MarketTrrendsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;MarketTrendsduringaPandemic&#47;MarketTrrendsDashboard?:language=en&amp;:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MarketTrendsduringaPandemic&#47;MarketTrrendsDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>               
 
+[Multivariate Analyis on Heart Disease Data]
+Cardiovascular disease is one of the leading causes of death globally according to the World Health Organization (WHO). Every year, more than 17 million die from cardiovascular diseases and most of them display heart failures. Heart failure could be defined as the inability of the heart to pump enough blood to meet the body’s needs for blood and oxygen. The purpose of this project is to analyse the survival rate of cardiovascular heart disease (CDH) patients who had undergone a heart failure. Using the region of Faisalabad (third most populous city of Pakistan) as case study, the dataset aims to investigate the major risk factors related to heart failure.
+![](Images/heart%20disease%20data.png)
 
 Data Visualization and Simple logisitic regression
 
