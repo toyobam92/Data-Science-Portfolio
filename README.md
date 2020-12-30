@@ -11,7 +11,21 @@ Business Intelligence Project - Python,Tableau
 
 [Key Considerations for Market Trends - COVID 19 as a case study](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/Market%20Trend%20Analysis)
 
-<div class='tableauPlaceholder' id='viz1608418011266' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MarketTrendsduringaPandemic&#47;MarketTrrendsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;MarketTrendsduringaPandemic&#47;MarketTrrendsDashboard?:language=en&amp;:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MarketTrendsduringaPandemic&#47;MarketTrrendsDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>               
+This project focused on a market study for top 10 GDP countries pre and post COVID-19 pandemic. The objective of this study is to examine key considerations during market disruptions in these countries. For Market analysis datasets used are prices for Precious metals, Stock (One major Stock for each country) and Cryptocurrency. The aim is to gain insights on market and investment trends in the reign of a pandemic.
+
+<div class='tableauPlaceholder' id='viz1608418011266' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MarketTrendsduringaPandemic&#47;MarketTrrendsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;MarketTrendsduringaPandemic&#47;MarketTrrendsDashboard?:language=en&amp;:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MarketTrendsduringaPandemic&#47;MarketTrrendsDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>
+
+
+[Principal Component Analysis from scratch and a base model for classification]
+
+Eigenfaces represents the set of eigenvectors of the covariance matrix of facial images, the essence of this approach is to capture the direction with the most variance and transform the original face images while preserving the most information.
+
+PCA enables dimensionality reduction which is the first step in this process whereby eigenvectors are obtained to produce principal components that represent the original training images. The overall idea is to go from a d-dimensional dataset by projecting it onto a (k)-dimensional subspace (where k<d) in order to increase the computational efficiency while retaining most of the information.
+
+The purpose of this project, is to classifiy a set of labelled faces using an euclidean dustance model.
+
+![](Images/PCA_IMAGE.png)
+
 
 [Multivariate Analysis Project on Heart Disease Data](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/Multivariate%20Analysis) R,Python
 
