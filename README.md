@@ -2,6 +2,12 @@
 # Data-Science-Portfolio
 Toyosi Bamidele's Data Science Portfolio
 
+[Predicting food](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/Predicting%20Food%20Delivery%20times) 
+
+This machine learning exercise aims to predict the estimated time taken for delivery(total_delivery_period). Understanding that extraordinarily early or too late orders has a much worse impact than slightly early/late, the prediction approach involves getting a clear understanding of each feature and its contribution to predicting the total delivery period. 
+
+Features that contribute to the model's strong predictive power enable much more exact delivery times; resulting in improved customer and driver experience, customer retention, and increased driver referrals to join the dasher program, resulting in an overall revenue increase.
+
 [SQL Project](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/SQL%20Project) MySQL
 
 Created an Entity relationship model and dimensional relationship model to populate census data in a database
