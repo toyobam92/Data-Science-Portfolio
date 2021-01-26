@@ -8,8 +8,7 @@ This machine learning exercise aims to predict the estimated time taken for deli
 
 Features that contribute to the model's strong predictive power enable much more exact delivery times; resulting in improved customer and driver experience, customer retention, and increased driver referrals to join the dasher program, resulting in an overall revenue increase.
 
-[SQL Project](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/SQL%20Project) MySQL
-
+[SQL Project](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/SQL%20Project) 
 Created an Entity relationship model and dimensional relationship model to populate census data in a database
 
 ![](Images/FCP3_Dimensional.png)
