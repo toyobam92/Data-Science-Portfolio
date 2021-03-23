@@ -8,7 +8,10 @@ Spam has become the bane of existence for many users and entities providing emai
 
 Techniques Explored: Cross Validation, Boosting, Stacking, OverSampling, UnderSamplin, Synthetic Minority Over-sampling and Natural Language Processing methodologies
 
-![](Images/Screen Shot 2021-03-22 at 11.21.54 PM.png)
+![](Images/Screen%20Shot%202021-03-22%20at%2011.20.39%20PM.png)
+
+
+![](Images/Screen%20Shot%202021-03-22%20at%2011.21.54%20PM.png)
 
 [Predicting Food Delivery Times](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/Predicting%20Food%20Delivery%20times) 
 
