@@ -2,6 +2,15 @@
 # Data-Science-Portfolio
 Toyosi Bamidele's Data Science Portfolio
 
+[Spam Message Classification](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/Spam%20Classification_NLP%20Project) 
+
+Spam has become the bane of existence for many users and entities providing email services. Time is lost when sifting through unwanted messages and important emails may be lost through omission or accidental deletion.The upsurge in the volume of unwanted emails  and text messages called spam has created an intense need for the development of more dependable and robust antispam filters.The goal of this analysis is to classify the text data into spam and ham to determine legitimate message and spam messages The data will be used to create a model to predict the class of unseen records.
+
+Techniques Explored: Cross Validation, Boosting, Stacking, OverSampling, UnderSamplin, Synthetic Minority Over-sampling and Natural Language Processing methodologies
+
+![](Images/Screen Shot 2021-03-22 at 11.20.39 PM.png)
+![](Images/Screen Shot 2021-03-22 at 11.21.54 PM.png)
+
 [Predicting Food Delivery Times](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/Predicting%20Food%20Delivery%20times) 
 
 This machine learning exercise aims to predict the estimated time taken for delivery(total_delivery_period). Understanding that extraordinarily early or too late orders has a much worse impact than slightly early/late, the prediction approach involves getting a clear understanding of each feature and its contribution to predicting the total delivery period. 
