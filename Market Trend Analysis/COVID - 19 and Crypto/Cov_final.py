@@ -4,7 +4,7 @@ import numpy as np
 #import requests as r
 import datetime as dt
 
-path = '/Users/Yang/Desktop/final/'
+path = '/Users/xxx/Desktop/final/'
 file_covid = "covid.csv"
 file_bit="BIT.csv"
 file_ETH="ETH.csv"
