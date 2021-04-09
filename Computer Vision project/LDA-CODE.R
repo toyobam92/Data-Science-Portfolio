@@ -4,8 +4,8 @@ str(cakes_codes)
 
 
 pr_pca<- prcomp(cakes_codes, scale = TRUE, center = TRUE)
-?prcomp
-summry(pr_pca)
+
+summary(pr_pca)
 str(pr_pca)
 screeplot(pr_pca)
 
