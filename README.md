@@ -38,7 +38,7 @@ Eigenfaces represents the set of eigenvectors of the covariance matrix of facial
 
 PCA enables dimensionality reduction which is the first step in this process whereby eigenvectors are obtained to produce principal components that represent the original training images. The overall idea is to go from a d-dimensional dataset by projecting it onto a (k)-dimensional subspace (where k<d) in order to increase the computational efficiency while retaining most of the information.
 
-The purpose of this project, is to classifiy a set of labelled faces using an euclidean dustance model.
+The purpose of this project, is to classifiy a set of labelled faces using an euclidean distance model.
 
 ![](Images/PCA_IMAGE.png)
 
