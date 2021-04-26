@@ -1,0 +1,180 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
+Problem 1: A university has the following academic ranks for tenured/tenure-track faculty: assistant professor, associate
+professor, and professor. The first two ranks are tenure-track, so only professors have tenure. A tenure-track faculty member
+may be discharged, remain at his or her present rank, or be promoted to a higher rank. Discharged faculty are never rehired.
+Only tenure-track faculty members can be promoted or discharged. A professor may remain as his or her rank or retire. All
+changes happen at the end of an academic year.
+
+
+a. The career path of a faculty member can be modeled using a Markov chain with 5 states. Define the state variable, the
+state space, and give the index set for the Markov chain.
+1.Discharged 
+2.Assistant Professor
+3.Associate Professor
+4.Professor 
+5.Retire
+
+State Space {1,2,3,4,5}
+
+b.The promotion and discharge probabilities for assistant professors are 0.3 and 0.2, respectively. The promotion and
+discharge probabilities for associate professors are 0.2 and 0.15, respectively. On average, 10% of professors retire
+each year. Construct a transition matrix and transition diagram for the Markov chain.
+
+```{r}
+library(diagram)
+library(markovchain)
+
+Discharged <- c(1,0,0,0,0)
+A_Prof<-c(0.2,0.5,0.3,0,0)
+As_Prof<- c(0.15,0,0.65,0.2,0)
+Prof<-c(0,0,0,0.9,0.1)
+Retired <- c(0,0,0,0,1)
+
+x <- cbind(Discharged,A_Prof,As_Prof,Prof,Retired)
+colnames(x)<- c("Discharged","A_Prof","As_Prof","Prof","Retired")
+transition_matrix<- matrix(x, nrow =5 ,byrow=TRUE)
+
+
+dtmcA <- new("markovchain",transitionMatrix=transition_matrix,states=c("Discharged","A_Prof","As_Prof","Prof","Retired"), name="MarkovChain A") 
+dtmcA
+
+plot(dtmcA)
+
+
+```
+c.If the university’s faculty consists of 45% assistant professors, 30% associate professors, and 25% professors at the
+end of this academic year, what should the distribution of faculty be at the end of the next academic year? Express
+answers to the nearest 0.001.
+
+```{r}
+#current distribution
+c <- c(0,0.45,0.3,0.25,0)
+#distribution by year end
+y<- c%*%transition_matrix
+colnames(y) <- c("Discharged","Assistant_Professor","Associate_Professor","Professor","Retired")
+y
+```
+
+Problem 2: Consider a timber growth model used in forest management. The states are size categories, measured by tree
+diameter. Every three years, all the trees in a stand were measured, and from that data the following transition matrix was
+determined. Units are in inches.
+
+a. Define the state space for the Markov chain and draw the transition diagram.
+State Space 
+1. 0-1
+2. 1-3
+3. 3-7
+4 8
+
+State Space {1,2,3,4}
+```{r}
+
+library(diagram)
+library(markovchain)
+
+size_1 <- c(0.92,0.08,0,0)
+size_2 <- c(0,0.97,0.03,0)
+size_3 <- c(0,0,0.98,0.02)
+size_4 <- c(0,0,0,1)
+
+x <- cbind(size_1,size_2,size_3,size_4)
+colnames(x)<- c("0-1","1-3","3-7","8")
+rownames(x)<- c("0-1","1-3","3-7","8")
+transition_matrix_2<- matrix(x, nrow =4 ,byrow=TRUE)
+dtmcA <- new("markovchain",transitionMatrix=transition_matrix_2,states=c("0-1","1-3","3-7","8"), name="MarkovChain A") 
+dtmcA
+plot(dtmcA)
+
+```
+b. Note that the time for each transition is 3 years. This means that the index set is T = {0;1;2;3;4; : }and each number
+represents a 3-year period. So X1 is the state variable representing the size of a tree after 1 transition which is 3
+years. Similarly, X2 takes on the number of the state representing tree size after 6 years, or two transitions. Find the
+percentage of the current trees in the stand that are currently 0-1 inches in diameters which, after 15 years will be:
+i. 1-3 inches in diameter  - 31.9%
+ii. 3-8 inches in diameter  -2.1%
+iii. more than 8 inches in diameter -0.0449%
+```{r}
+library(matrixcalc)
+#Each tranistion is tree years, so to get to 15,is 5 steps 
+P_5 <- matrix.power(transition_matrix_2,5)
+P_5
+inch_1_3 <-P_5[1,2]
+inch_1_3 
+inch_3_8 <-P_5[1,3]
+inch_3_8
+inch_8  <- P_5[1,4]
+inch_8 
+```
+c.Consider the current population of 0-1 inch diameter trees. Using the Markov model, find the percentage that will be
+less than 1 inch in diameter after 30 years.- 43.4%
+```{r}
+#Each tranistion is tree years, so to get to 30,is 10 steps 
+P_10 <- matrix.power(transition_matrix_2,10)
+P_10
+inch_0_1 <-P_10[1,1]
+inch_0_1
+```
+d.Suppose that of the trees currently in the stand, 50% have less than 1 inch diameter, 28% have 1-3 inch diameter, 13%
+have 3-8 inch diameter, and the rest have over 8 inch diameter. What will the distribution of diameters be in 12 years?
+```{r}
+inch_0_1 <- 0.50
+inch_1_3 <- 0.28
+inch_3_8 <- 0.13
+inch_8 <- 1-(inch_0_1+inch_1_3+inch_3_8)
+current <- c(inch_0_1,inch_1_3,inch_3_8,inch_8)
+
+P_12 <- matrix.power(transition_matrix_2,4)
+current%*%P_12
+
+```
+Problem 3: An electronic device contains a number of interchangeable parts that operate independently. Each component
+is subject to random failure which renders it completely inoperable. All components are inspected at the end of every week.A component which is found to have failed is replaced with an identical new component. Based on historical data, a new component has 0.2 probability of failing in the first week. Components that are 1 week old have a 0.375 probability of failingin the second week. Components that are 2 weeks old have a 0.8 probability of failing in the third week. No components lastonger than 4 weeks. Let the process be represented by the following state variable:
+0:0.2 probability of failing 
+1:0.375 probability of failing
+2:0.8 probability of failing
+3:0  probability of failing
+
+a.What is the transition matrix for this process?
+```{r}
+week_0<- c(0.2,0.8,0,0)
+week_1<- c(0.375,0,0.625,0) 
+week_2<- c(0.8,0,0,0.2) 
+week_3<- c(1,0,0,0) 
+
+x<- cbind(week_0,week_1,week_2,week_3)
+colnames(x)<- c("week_0","week_1","week_2","week_3")
+rownames(x)<- c("week_0","week_1","week_2","week_3")
+transition_matrix_3<- matrix(x, nrow =4 ,byrow=TRUE)
+dtmcA <- new("markovchain",transitionMatrix=transition_matrix_3,states=c("week_0","week_1","week_2","week_3"), name="MarkovChain A") 
+dtmcA
+plot(dtmcA)
+```
+
+b. Determine E(3). What is the value of e(3)02 and what does it mean in the context of this problem? 
+```{r}
+P_2 <- matrix.power(transition_matrix_3,2)
+P_3 <-  matrix.power(transition_matrix_3,3)
+
+E <- diag(4) + transition_matrix_3 + P_2 + P_3 
+E[1,3]
+
+```
+c.If a device contains a component that is two weeks old, what is the probability that the next time that it has a component
+that is two weeks old is 5 weeks from now?
+```{r}
+P_5 <- matrix.power(transition_matrix_3,5)
+P_5[3,3]
+```
+What is the mean recurrence time for components being new? Find your answer by taking the reciprocal of the steady
+state probability.
+```{r}
+library(MASS)
+SS <- t(transition_matrix_3) - diag(4) 
+SS<- rbind(SS[1:3,],c(1,1,1,1))
+ginv(SS)%*%(c(0,0,0,1))
+```
+
