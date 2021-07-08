@@ -1,5 +1,5 @@
 
-# Data-Science-Portfolio
+Data-Science-Portfolio
 Toyosi Bamidele's Data Science Portfolio
 
 #Sentiment Analysis - Investigating the inflence of Google trends data and Sentiment data for Price Prediction
