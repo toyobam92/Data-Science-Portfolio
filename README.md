@@ -6,8 +6,7 @@ Toyosi Bamidele's Data Science Portfolio
 The rise of cryptocurrency, i.e., Bitcoin, as decentralized means of money transfer has given rise to the need for efficient methods for Bitcoin price forecasting. This paper assesses the influence of Bitcoin-related Google web search volume and Tweet sentiment data in the prediction of Bitcoin prices during a short time window. As social media and web search usage increases, opinion mining and machine learning integration provide insights on periods whereby sentiment data and search volume relate to Bitcoin prices. An efficiently mapped data analysis system to ensure data quality and model efficiency is imperative. This analysis explores a machine learning framework from Data Sourcing, Data Preprocessing and Transformation, Exploratory Data Analysis, Correlation Analysis, Feature Selection, and Modeling. The system provided insights into areas for model improvement. Feature selection methods employed include Correlation Analysis, F-regression and Shapley values, and Long Short-Term Memory (LSTM) model for Bitcoin close price prediction. Overall, Google web search data proved to be a more robust feature vs. Tweet sentiment, as it improved model goodness of fit and reduced Root Mean Square Error (RMSE) alongside the historical close price. Furthermore, the results indicate that Google trends for the period examined influence Bitcoin's close prediction.
 
 ![](Images/trend_plot.png)
-
-
+![](Images/shap_plot.png)
 
 [Spam Message Classification](https://github.com/toyobam92/Data-Science-Portfolio/tree/master/Spam%20Classification_NLP%20Project) 
 
